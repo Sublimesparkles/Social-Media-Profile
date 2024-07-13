@@ -1,0 +1,111 @@
+/*CSS-RESET*/
+*::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+ /*main cSS*/
+ :root{
+ --sm-green: hsl(75, 94%, 57%);
+ --sm-white: hsl(0, 0%, 100%);
+ --sm-grey: hsl(0, 0%, 20%);
+ --sm-darkgrey: hsl(0, 0%, 12%);
+ --sm-offblack: hsl(0, 0%, 8%);
+ }
+
+ @font-face{
+  font-family: Inter;
+  src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+ }
+
+ body{
+  background-color: var(--sm-offblack);
+  font-family: 'Inter', sans-serif;
+ }
+
+
+ div.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sm-darkgrey);
+  justify-content: center;
+  margin-inline: 530px;
+  margin-block: 100px;
+  padding-bottom: 50px;
+  font-family: Inter;
+  border-radius: 8px;
+ }
+
+ img.jessica{
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+  padding-block: 30px;
+  padding-inline: 105px;
+ }
+
+ h1.name{
+  color: var(--sm-white);
+  padding-inline: 60px;
+  font-size: 20px;
+  font-weight: 500;
+ }
+
+ h3.location{
+  color: var(--sm-green);
+  font-size: 12px;
+  padding-inline: 70px;
+  margin-bottom: 18px;
+  margin-top: 5px;
+  font-size: 11px;
+ }
+ p.description{
+  color: var(--sm-white);
+  font-size: 12px;
+ padding-inline: 50px;
+ padding-bottom: 13px;
+ font-size: 10px;
+ }
+
+ div.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+  div.flex-item{
+  background-color: var(--sm-grey);
+  margin-block: 5px;
+  width: 220px;
+  height: 25px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 6px;
+ }
+
+ div.flex-item>a {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--sm-white);
+  font-weight: 500;
+  font-size: 10px;
+ }
